@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '12': '12px', // Add a custom border width of 12px
+        '16': '16px', // Add a custom border width of 16px
+      },
       colors: {
 
       'background':  '#e4f1fe',
