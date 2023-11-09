@@ -18,7 +18,14 @@ export default {
       'text1'      : '#d1d5db',
       'text2'      : '#fafafa',
       'texthighlighted': '#1d4ed8',
-    },},
+    },
+    fontFamily:
+    {
+      roboto: ['Roboto Condensed', 'sans-serif'],
+      poppin: ['Poppins', 'sans-serif'],
+      kanit:  ['Kanit', 'sans-serif'],
+    },
+  },
     
   },
   plugins: [],
