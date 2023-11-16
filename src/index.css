@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Condensed:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@keyframes anim {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @layer utilities {
+    .animate-tape {
+      animation: anim 10s linear infinite;
+    }
+  
+    .animate-tape:hover {
+      animation-play-state: paused;
+    }
+  }
+  
