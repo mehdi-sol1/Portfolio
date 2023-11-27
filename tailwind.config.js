@@ -25,6 +25,8 @@ export default {
       poppin: ['Poppins', 'sans-serif'],
       kanit:  ['Kanit', 'sans-serif'],
       pt:     ['PT Sans', 'sans-serif'],
+      albert: ['Albert Sans', 'sans-serif'],
+      outfit: ['Outfit', 'sans-serif'],
     },
   },
     
