@@ -5,16 +5,18 @@ import './index.css'
 import Skills from './components/Skills'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contactme from './components/Contactme'
 
 
 function App() {
   return (
-    <div>      
+    <div className='scroll-smooth'>      
         <Header/>    
         <Body/>
         <About/>
         <Skills/>
         <Projects />
+        <Contactme />
     </div>
     
   )

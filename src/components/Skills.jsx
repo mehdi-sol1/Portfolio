@@ -1,27 +1,21 @@
 import React from 'react';
-import c from '../assets/c.png';
-import reactt from '../assets/react.png';
-import reactn from '../assets/reactn.png';
-import tailwind from '../assets/tailwind.png';
-import html from '../assets/html.png';
+import skills from '../data/skills'
+import Skill from './Skill';
 
 function Skills() {
   return (
-    <div className='flex w-full h-screen text-center justify-center bg-background1 text-white'>
-      <div className='mt-20'>
-        <h1 className='text-6xl font-poppin'>skills</h1>
-      </div>
+   <div className='flex flex-col items-center justify-center h-auto min-h-[500px] bg-background1 text-center py-5'>
+      <h1 className='font-kanit text-white text-6xl mb-8'>Skills</h1>
 
-      <div className='w-full mx-8  overflow-hidden'>
-        <div className='flex items-center gap-36 h-80 animate-tape'>
-          <img src={c} alt='Hero Image' className='w-[150px] h-[150px]' />
-          <img src={tailwind} alt='Hero Image' className='w-[150px] h-[150px]' />
-          <img src={reactt} alt='Hero Image' className='w-[150px] h-[150px]' />
-          <img src={reactn} alt='Hero Image' className='w-[150px] h-[150px]' />
-          <img src={html} alt='Hero Image' className='w-[150px] h-[150px]' />
-        </div>
+      <div className='flex flex-wrap justify-center items-center w-[300px] md:w-[700px]'>    
+        {skills.map(item => {
+          return(
+            <Skill key={item.id} data={item}/>
+          )
+        })}
       </div>
     </div>
+
   );
 }
 

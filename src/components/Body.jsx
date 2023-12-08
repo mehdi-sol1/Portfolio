@@ -20,7 +20,7 @@ function Body(){
                             <h1 className="md:text-6xl   text-4xl font-bold antialiased text-blue-600">Mehdeddine</h1>                                                                   
                     </div>
                     
-                    <div className="flex text-white my-8 text-xl font-kanit">
+                    <div className="md:flex flex-row text-white my-8 text-xl font-kanit">
                         <p>I am a </p>
                         <Typed className="text-blue-600 text-xl mx-2" strings={[' Productive ',' Talented ',' Creative ']} typeSpeed={200} backSpeed={150} loop/>
                           <p className="">  Web Developer and a network engineer</p>

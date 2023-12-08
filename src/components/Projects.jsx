@@ -1,5 +1,6 @@
 import React from 'react'
 import Project from './Project'
+import data from '../data/projects'
 
 function Projects()
 {
@@ -8,9 +9,12 @@ function Projects()
         <h1 className=' font-kanit text-white text-6xl'>Projects</h1>
         
         <div className='flex flex-wrap justify-center mt-12'>
-                <Project />
-                <Project />
-                <Project />
+                {data.map(item => {
+                 return(
+                  <Project key={item.id} data={item}/>
+                 )
+                })}
+               
         </div>
     </div>
   )
