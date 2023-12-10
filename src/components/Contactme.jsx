@@ -8,10 +8,8 @@ export function Model(props) {
   const { nodes, materials, animations } = useGLTF('/scene.gltf');
   const { actions } = useAnimations(animations, group);
 
-  // Use useFrame to update the rotation in each frame
   useFrame((state, delta) => {
-    // Rotate the entire group around the Y-axis in each frame
-    group.current.rotation.y += 0.005; // Adjust the rotation speed as needed
+    group.current.rotation.y += 0.005; 
   });
 
   return (

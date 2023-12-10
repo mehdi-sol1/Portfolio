@@ -8,7 +8,7 @@ import {BsArrowDownCircle} from "react-icons/bs"
 function Body(){
     return(
         < >
-            <div className='flex w-full h-screen mx-auto text-center  justify-center bg-background1'>
+            <div className='flex w-screen h-screen mx-auto text-center  justify-center bg-background1'>
             
                
                 <div className="flex flex-col align-middle mt-44 mb-8 mx-20 p-8">

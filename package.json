@@ -2,18 +2,22 @@
   "name": "shopshop",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://mehdi-sol1.github.io/Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.90.0",
     "@react-three/fiber": "^8.15.12",
     "autoprefixer": "^10.4.15",
+    "gh-pages": "^6.1.0",
     "gltfjsx": "^6.2.15",
     "postcss": "^8.4.28",
     "react": "^18.2.0",
