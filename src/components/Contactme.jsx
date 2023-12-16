@@ -5,7 +5,7 @@ import { Canvas , useFrame} from '@react-three/fiber';
 
 export function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/scene.gltf');
+  const { nodes, materials, animations } = useGLTF('../scene.gltf');
   const { actions } = useAnimations(animations, group);
 
   useFrame((state, delta) => {
