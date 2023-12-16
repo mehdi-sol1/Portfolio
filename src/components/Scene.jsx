@@ -13,7 +13,7 @@ import { useFrame} from '@react-three/fiber';
 
 export function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/public/scene.gltf');
+  const { nodes, materials, animations } = useGLTF('/scene.gltf');
   const { actions } = useAnimations(animations, group);
 
   // Use useFrame to update the rotation in each frame
@@ -42,4 +42,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload('/public/scene.gltf')
+useGLTF.preload('/scene.gltf')
