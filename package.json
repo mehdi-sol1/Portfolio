@@ -2,14 +2,14 @@
   "name": "shopshop",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mehdi-sol1.github.io/Portfolio/",
+  "homepage": "https://mehdi-sol1.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "preploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
