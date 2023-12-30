@@ -28,6 +28,55 @@ export default {
       albert: ['Albert Sans', 'sans-serif'],
       outfit: ['Outfit', 'sans-serif'],
     },
+    animation:{
+      blob: "blob 4s infinite",
+      blob2:"blob2 4s infinite",
+      blob3:"blob2 4s infinite",
+    },
+    keyframes:{
+      blob:{
+        "0%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+        "33%": {
+          transform: "translate(100px, -150px) scale(1.3)"
+        },
+        "66%": {
+          transform: "translate(100px, -100px) scale(0.9)"
+        },
+        "100%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+      },
+      blob2:{
+        "0%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+        "33%": {
+          transform: "translate(-200px, 100px) scale(1.1)"
+        },
+        "66%": {
+          transform: "translate(50px, -20px) scale(1.2)"
+        },
+        "100%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+      },
+      blob3:{
+        "0%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+        "33%": {
+          transform: "translate(-100px, -50px) scale(1.1)"
+        },
+        "66%": {
+          transform: "translate(100px, -150px) scale(1.3)"
+        },
+        "100%": {
+          transform: "translate(0px, 0px) scale(1)"
+        },
+      }
+    }
   },
     
   },
